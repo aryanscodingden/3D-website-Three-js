@@ -18,7 +18,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.render(scene, camera);
 
-const texture = new THREE.TextureLoader().load('imagetexture.png')
+const texture = new THREE.TextureLoader().load('/imagetexture.png')
 texture.anisotropy = renderer.capabilities.getMaxAnisotropy
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
 const material = new THREE.MeshBasicMaterial( {map: texture} );
